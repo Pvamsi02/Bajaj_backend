@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bajaj Challenge</title>
+    <style>
+      textarea {
+        width: 300px;
+        height: 100px;
+      }
+      .response-container {
+        margin-top: 20px;
+      }
+      .response-container pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bajaj Finserv Health Challenge</h1>
+    <form id="jsonForm">
+      <textarea id="jsonInput" placeholder="Enter JSON here"></textarea
+      ><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+    <div
+      class="response-container"
+      id="responseContainer"
+      style="display: none"
+    >
+      <h3>Select what to display:</h3>
+      <label
+        ><input type="checkbox" value="Numbers" id="filterNumbers" />
+        Numbers</label
+      >
+      <label
+        ><input type="checkbox" value="Alphabets" id="filterAlphabets" />
+        Alphabets</label
+      >
+      <label
+        ><input
+          type="checkbox"
+          value="Highest Lowercase Alphabet"
+          id="filterHighest"
+        />
+        Highest Lowercase Alphabet</label
+      >
+      <div id="responseOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
